@@ -4,7 +4,7 @@ header{
     width: 100%;
     justify-content: space-between;
     position: fixed;
-    background-color: #9C9C9C;
+    background-color: #949b95;
     
 }
 
@@ -36,12 +36,12 @@ body{
 
 .dropdownbtn{
     border: none;
-    background-color:#9C9C9C ;
+    background-color:#949b95 ;
 }
 
 .dropdownbtn:hover{
     background-color:  #0d407f;
-    color: #9C9C9C;
+    color: #949b95;
 }
 
 .dropdownContent {

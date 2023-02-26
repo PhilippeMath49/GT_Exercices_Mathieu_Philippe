@@ -1,0 +1,26 @@
+footer{
+    background-color: #949b95;
+    width: auto;
+    height: 100%;
+    color: #231f20;
+    
+
+}
+
+#copyright{
+    background-color: #231f20;
+    color: #949b95;
+    text-align: center;
+}
+
+.categorie{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    height: 100%;
+    align-items: center;
+}
+
+h1{
+    justify-self: center;
+}

@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tableau{
+    width: 190px;
+    border: 1px black solid;
+}

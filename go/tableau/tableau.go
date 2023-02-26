@@ -1,16 +1,20 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"math/rand"
 	"net/http"
 )
 
+type Tab struct {
+	Tableau []int
+}
+
 func main() {
-	tmpl := template.Must(template.ParseFiles("tableau.html"))
 
 	http.HandleFunc("/", tableauWeb)
+	fs := http.FileServer(http.Dir("css"))
+	http.Handle("/css/", http.StripPrefix("/css/", fs))
 	http.ListenAndServe(":80", nil)
 }
 
@@ -26,6 +30,10 @@ func tableau() []int {
 }
 
 func tableauWeb(w http.ResponseWriter, r *http.Request) {
-	tab := tableau()
-	fmt.Println(tab)
+	tmpl := template.Must(template.ParseFiles("tableau.html"))
+	data := Tab{
+		Tableau: tableau(),
+	}
+	tmpl.Execute(w, data)
+
 }
