@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="carouselJS.css" />
+  </head>
+  <body>
+    <div id="carousel">
+        <div id="container">
+            <div class="photo" id="photo1"></div>
+            <div class="photo" id="photo2"></div>
+            <div class="photo" id="photo3"></div>
+        </div>
+      <button class="btn" id="g"><</button>
+      <button class="btn" id="d">></button>
+        <script>
+            const nbr=3;
+            var p=0;
+            var container=document.getElementById("container")
+            var g=document.getElementById("g")
+            var d=document.getElementById("d")
+            container.style.width=(800*nbr)+"px";
+
+            g.onclick=function(){
+                if(p>-nbr+1)
+                p--;
+                container.style.transform="translate("+p*400+"px)"
+                container.style.transition="all 0.5s ease"
+            }
+            d.onclick=function(){
+                if(p<0)
+                p++;
+                container.style.transform="translate("+p*400+"px)"
+                container.style.transition="all 0.5s ease"
+            }
+
+        </script>
+    </div>
+  </body>
+</html>
