@@ -1,8 +1,10 @@
 .VerticalNav{
     position: fixed;
+    top: 12%;
     height: 100vh;
     width: 10vw;
     background-color: #949b95;
+    border-right: #231f20 solid 1px;
 }
 
 a{
@@ -21,7 +23,8 @@ a{
 
 .menuVer a{
     color: #949b95;
-    margin-top: 15%;
+    margin-top: 100%;
+    margin-bottom: 3%;
 }
 
 .linkMenu{

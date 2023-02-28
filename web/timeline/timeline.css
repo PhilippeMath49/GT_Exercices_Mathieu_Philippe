@@ -1,11 +1,13 @@
 #timeline{
     height: 50vh;
-    width: 100vw;
+    width: 70vw;
     background-color: #231f20;
     color:#949b95;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20%;
+    margin-left: 20%;
 }
 
 body{
@@ -15,7 +17,7 @@ body{
 
 .line{
     border-bottom: #949b95 1px solid;
-    width: 100ù;
+    width: 100%;
     
 }
 .period{

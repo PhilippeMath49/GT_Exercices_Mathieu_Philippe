@@ -9,11 +9,14 @@
     color: #949b95;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 5%;
 }
 
 .imgcard{
     max-width: 50%;
     max-height: 150%;
+    overflow: hidden;
 }
 
 img{
@@ -40,4 +43,7 @@ body{
 
 .cards{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
 }

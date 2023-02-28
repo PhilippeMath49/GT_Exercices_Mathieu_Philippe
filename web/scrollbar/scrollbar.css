@@ -1,0 +1,21 @@
+
+
+.divScroll{
+    min-width: 100%;
+    min-height: 1000px;
+    background-color: aquamarine;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
