@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../cards/cards.css">
     <link rel="stylesheet" href="../carouselHtmlCSS/carousel.css">
     <link rel="stylesheet" href="../CarouselJS/carouselJS.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <title>Document</title>
 </head>
 <body>
@@ -51,7 +52,6 @@
             <a href="#timeline">timeline</a>
             <a href="#CARD">Cards</a>
             <a href="#carousel1">Carousel</a> 
-            <a href="#carousel2">Carousel</a>
         </div>
         </div>
     </div>
@@ -154,36 +154,33 @@
     </div>
 
 
-    <div id="carousel2">
-        <div id="container">
-            <div class="photo" id="photo1"></div>
-            <div class="photo" id="photo2"></div>
-            <div class="photo" id="photo3"></div>
+   
+
+<footer>
+    <div class="categorie">
+        <div id="contact">
+            <H1>contact</H1>
+            <p>Pour nous contacter privilégier les appels via le warp</p>
         </div>
-      <button class="btn" id="g"><</button>
-      <button class="btn" id="d">></button>
-        <script>
-            const nbr=3;
-            var p=0;
-            var container=document.getElementById("container")
-            var g=document.getElementById("g")
-            var d=document.getElementById("d")
-            container.style.width=(800*nbr)+"px";
+        <div id="about">
+            <h1>A propos de nous</h1>
+            <p>L'Imperium a été créé par notre cher dieu empereur vers l'an de grace 30000 <br>
+            Nous offrons des services en tout genre allant de la vente de marchandises à <br>
+            la defence de nos monde contre l'hérésie et les menaces Xenos.</p>
+            
+        </div>
+        <div id="services">
+            <h1>Nos offres d'emplois</h1>
+            <P>-S'engager dans l'astra militarum</P>
+            <p>-Recherche scientifique</p>
+            <p>-Se porter volontaire en sacrifice pour l'empereur</p>
+        </div>
 
-            g.onclick=function(){
-                if(p>-nbr+1)
-                p--;
-                container.style.transform="translate("+p*400+"px)"
-                container.style.transition="all 0.5s ease"
-            }
-            d.onclick=function(){
-                if(p<0)
-                p++;
-                container.style.transform="translate("+p*400+"px)"
-                container.style.transition="all 0.5s ease"
-            }
-
-        </script>
+    </div>
+    <div id="copyright">
+        <p>© 2023 Imperium</p>
+    </div>
+</footer>
     </div>
 </body>
 </html>

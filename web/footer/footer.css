@@ -1,8 +1,13 @@
 footer{
     background-color: #949b95;
-    width: auto;
+    width: 90%;
     height: 100%;
     color: #231f20;
+    position: relative;
+    top: 100%;
+    margin-left: 10%;
+    bo
+
     
 
 }
