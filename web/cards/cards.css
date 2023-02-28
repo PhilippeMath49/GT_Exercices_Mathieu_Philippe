@@ -39,6 +39,12 @@ body{
 
 .textcard{
     margin-left:5%;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .cards{
@@ -47,3 +53,4 @@ body{
     align-items: center;
     margin-top: 5%;
 }
+
